@@ -44,7 +44,7 @@ describe("Search Gyms Use Case", () => {
         ])
     })
 
-    it.skip("should be able to fetch paginated gyms searsh", async () => {
+    it("should be able to fetch paginated gyms searsh", async () => {
 
         for (let i = 1; i <= 22; i++) {
             await gymsRepository.create({
