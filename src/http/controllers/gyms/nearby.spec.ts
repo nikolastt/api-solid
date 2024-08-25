@@ -15,7 +15,7 @@ describe("Nearby Gym (e2e)", () => {
     })
 
     it("should be able to list nearby gyms", async () => {
-        const { token } = await createAndAuthenticateUser(app)
+        const { token } = await createAndAuthenticateUser(app, true)
 
         await supertest(app.server).post("/gyms").set("Authorization", `Bearer ${token}`).send({
             title: "JavaScript Gym",
