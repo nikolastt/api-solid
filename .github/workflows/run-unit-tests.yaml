@@ -15,6 +15,6 @@ jobs:
           version: 9
           cache: "pnpm"
 
-      - run: pnpm ci
+      - run: pnpm i
 
       - run: pnpm test
